@@ -10,7 +10,10 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+<<<<<<< HEAD
 import  	org.apache.http.util.EntityUtils;
+=======
+>>>>>>> 68c6864c9fed5e258b35b1a751c379bafb8fcf1a
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,9 +35,12 @@ public class JsonClient {
     }
 
     public String getJSON(String url, String getdata, String postdata) {
+<<<<<<< HEAD
 
         String responseString = "";
 
+=======
+>>>>>>> 68c6864c9fed5e258b35b1a751c379bafb8fcf1a
         // Making HTTP request
         try {
             //build url
@@ -46,9 +52,12 @@ public class JsonClient {
                 url=url+"&data="+getdata;
             }
             Log.e("Request: ", "> " + url);
+<<<<<<< HEAD
 
             boolean result = false;
 
+=======
+>>>>>>> 68c6864c9fed5e258b35b1a751c379bafb8fcf1a
             DefaultHttpClient httpClient = new DefaultHttpClient();
             HttpPost httpPost = new HttpPost(url);
             List<NameValuePair> pairs = new ArrayList<NameValuePair>(1);
@@ -57,10 +66,13 @@ public class JsonClient {
             HttpResponse httpResponse = httpClient.execute(httpPost);
             HttpEntity httpEntity = httpResponse.getEntity();
             is = httpEntity.getContent();
+<<<<<<< HEAD
 
             responseString += httpResponse.toString();
 
 
+=======
+>>>>>>> 68c6864c9fed5e258b35b1a751c379bafb8fcf1a
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (ClientProtocolException e) {
@@ -81,8 +93,12 @@ public class JsonClient {
         } catch (Exception e) {
             Log.e("Buffer Error", "Error converting result " + e.toString());
         }
+<<<<<<< HEAD
         Log.i("response", "RSP " + responseString);
         return responseString;
+=======
+        return json;
+>>>>>>> 68c6864c9fed5e258b35b1a751c379bafb8fcf1a
     }
 
     public String getJSON(String url, String getdata, String postdata,String param) {

@@ -1,7 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
     tools:context="com.example.admin.projectlibriapi.SetBookInfo">
+=======
+    tools:context="com.example.admin.projectlibriapi.setBookInfo">
+>>>>>>> 68c6864c9fed5e258b35b1a751c379bafb8fcf1a
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>

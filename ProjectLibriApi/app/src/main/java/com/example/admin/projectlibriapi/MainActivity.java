@@ -49,6 +49,7 @@ public class MainActivity extends ActionBarActivity {
     * Successivamente, per avviare la nuova finestra scrivere startActivity (nomeIntent)
      */
     public void showBookInfo(View view) {
+<<<<<<< HEAD
         Intent setBook = new Intent(this,SetBookInfo.class);
 
         startActivity(setBook);
@@ -60,4 +61,10 @@ public class MainActivity extends ActionBarActivity {
         startActivity(showBooks);
     }
 
+=======
+        Intent setBook = new Intent(this,setBookInfo.class);
+
+        startActivity(setBook);
+    }
+>>>>>>> 68c6864c9fed5e258b35b1a751c379bafb8fcf1a
 }
